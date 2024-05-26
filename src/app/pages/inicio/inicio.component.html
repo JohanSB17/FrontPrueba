@@ -1,0 +1,27 @@
+@if (mostrarTitulo) {
+  <h1>Tabla de personas</h1>
+}
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>ciudad</th>
+      <th>Documento</th>
+    </tr>
+  </thead>
+  <tbody>
+  @for(persona of personas;track $index){
+    <tr>
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.edad}}</td>
+      <td>{{persona.ciudad}}</td>
+      <td>{{persona.documento}}</td>
+    </tr>
+  }
+  </tbody>
+</table>
+<button (click)="cambioRuta()">Boton sin url</button>
+<hr>
+<button (click)="abrirModal()">Este es el modal</button>

@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>{{titulo}}</h1>
+  <app-tabla
+    [columnas]="columnas"
+    [data]="misTareas"
+    [titulo]="titulo"
+    (onInformacion)="recibirInformacionTareas($event)"
+  ></app-tabla>
+  <div class="formularioCompleto">
+    <h2>FORMULARIO COMPLETO</h2>
+    <form (ngSubmit)="agregarTareaCompleta()">
+      <label for="materia">Materia:</label>
+      <input type="text" id="materia" [(ngModel)]="nuevaTarea.materia" name="materia">
+      <label for="tipo">Tipo:</label>
+      <input type="text" id="tipo" [(ngModel)]="nuevaTarea.tipo" name="tipo">
+      <label for="fechaLimite">Fecha Límite:</label>
+      <input type="date" id="fechaLimite" [(ngModel)]="nuevaTarea.fechaLimite" name="fechaLimite">
+      <label for="descripcion">Descripción:</label>
+      <input type="text" id="descripcion" [(ngModel)]="nuevaTarea.descripcion" name="descripcion">
+      <button type="submit">Agregar Tarea</button>
+    </form>
+  </div>
+  <div class="formulario">
+    <h3>FORMULARIO HTML</h3>
+    <label for="materia">Materia</label>
+      <input type="text" id="materia" #materia required>
+      <label for="tipo">Tipo de Tarea</label>
+      <input type="text" id="tipo" #tipo required>
+      <label for="fechaLimite">Fecha Límite</label>
+      <input type="date" id="fechaLimite" #fechaLimite required>
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" #descripcion required></textarea>
+    <button (click)="agregarTarea(materia.value, tipo.value, fechaLimite.value, descripcion.value)">Agregar Tarea</button>
+  </div>
+
+</div>
+

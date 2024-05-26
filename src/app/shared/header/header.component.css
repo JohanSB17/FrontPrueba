@@ -1,0 +1,45 @@
+@keyframes linkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.logo img {
+  width: 88px;
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  animation: linkFade 0.5s ease forwards;
+}
+
+.nav-links a:hover {
+  color: #9394e2;
+}
+
+.navbar:hover {
+  background-color: #e6f8ff;
+}

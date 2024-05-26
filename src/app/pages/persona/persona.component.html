@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>{{tituloTabla}}</h2>
+  <app-tabla
+  [data]="personas"
+  [titulo]="tituloTabla"
+  [columnas]="columnas"
+  (onInformacion)="recibirInformacionUsuarios($event)"
+></app-tabla>
+</div>
+

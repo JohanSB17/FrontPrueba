@@ -1,0 +1,44 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #eeeeee;
+}
+
+button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin bordes */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block;
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 12px; /* Esquinas redondeadas */
+}
+
+button:hover {
+  background-color: #6fcf74; /* Color de fondo al pasar el cursor */
+}

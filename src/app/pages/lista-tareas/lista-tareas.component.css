@@ -1,0 +1,106 @@
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+h1, h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+app-tabla th, app-tabla td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+app-tabla th {
+  background-color: #4CAF50;
+  color: white;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.formulario label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formulario input, .formulario textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
+.formularioCompleto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.formularioCompleto form {
+  width: 100%;
+}
+
+.formularioCompleto label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+
+.formularioCompleto input {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formularioCompleto button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formularioCompleto button:hover {
+  background-color: #0056b3;
+}
+
